@@ -52,7 +52,7 @@ ram.runtime = "50M"
     armhf.url = "https://github.com/screego/server/releases/download/v1.10.5/screego_1.10.5_linux_armv7.tar.gz"
     armhf.sha256 = "bc87bf49aa14da94d4637e0fcdcb18e25badaf603911e1a515fd08192453351d"
 
-    # autoupdate.strategy = "latest_github_tag"
+    autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
 
