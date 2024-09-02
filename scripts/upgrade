@@ -30,10 +30,10 @@ chmod +x "$install_dir/screego"
 #=================================================
 ynh_script_progression --message="Updating $app's configuration files..." --weight=1
 
-ynh_add_config --template="screego.config" --destination="$install_dir/screego.config"
+#ynh_add_config --template="screego.config" --destination="$install_dir/screego.config"
 
-chmod 400 "$install_dir/screego.config"
-chown "$app:$app" "$install_dir/screego.config"
+#chmod 400 "$install_dir/screego.config"
+#chown "$app:$app" "$install_dir/screego.config"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
