@@ -21,7 +21,6 @@ ynh_script_progression "Upgrading source files..."
 
 ynh_setup_source --dest_dir="$install_dir" --keep="screego.config" --full_replace
 
-#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown -R "$app:www-data" "$install_dir"
 chmod +x "$install_dir/screego"
 
 #=================================================
@@ -30,9 +29,6 @@ chmod +x "$install_dir/screego"
 ynh_script_progression "Updating $app's configuration files..."
 
 ynh_config_add --template="screego.config" --destination="$install_dir/screego.config"
-
-#REMOVEME? Assuming the file is setup using ynh_config_add, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chmod 400 "$install_dir/screego.config"
-#REMOVEME? Assuming the file is setup using ynh_config_add, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown "$app:$app" "$install_dir/screego.config"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
