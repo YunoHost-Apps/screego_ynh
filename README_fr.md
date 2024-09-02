@@ -16,8 +16,13 @@ Il NE doit PAS être modifié à la main.
 
 ## Vue d’ensemble
 
-Ceci est une fausse description des fonctionalités de l'app
+### Fonctionnalités
 
+- Partage d'écran multi-utilisateurs
+- Transfert sécurisé via WebRTC
+- Faible latence / Haute résolution
+- Installation simple via Docker / binaire unique
+- Serveur TURN intégré voir Traversée NAT
 
 **Version incluse :** 1.10.5~ynh1
 
