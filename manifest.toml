@@ -64,3 +64,4 @@ ram.runtime = "50M"
     [resources.ports]
     main.default = 5050
     turn.default = 3478
+    turn.exposed = "Both"
