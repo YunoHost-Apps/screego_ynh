@@ -62,3 +62,5 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.ports]
+    main.default = 5050
+    turn.default = 3478
