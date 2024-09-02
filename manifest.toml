@@ -19,7 +19,7 @@ admindoc = "https://screego.net/#/"
 code = "https://github.com/screego/server"
 
 [integration]
-yunohost = ">= 11.2.18"
+yunohost = ">= 11.2.29"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -39,6 +39,12 @@ ram.runtime = "50M"
     [install.init_main_permission]
     type = "group"
     default = "visitors"
+
+[   install.admin]
+    type = "user"
+
+    [install.password]
+    type = "password"
 
 [resources]
 

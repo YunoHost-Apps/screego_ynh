@@ -1,5 +1,5 @@
 [Unit]
-Description=Screego: Screen sharing for developers
+Description=Screego: screen sharing for developers
 After=network.target
 
 [Service]

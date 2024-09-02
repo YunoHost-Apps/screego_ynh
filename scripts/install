@@ -8,6 +8,18 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
+# INITIALIZE AND STORE SETTINGS
+#=================================================
+
+password=$YNH_APP_ARG_PASSWORD
+ynh_app_setting_set --app=$app --key=password --value="$password"
+
+key=$(ynh_string_random)
+ynh_app_setting_set --app=$app --key=key --value="$key"
+
+public_ip4="$(curl -s ip.yunohost.org)" || true
+
+#=================================================
 # FIND AND OPEN A PORT
 #=================================================
 ynh_script_progression "Configuring firewall..."
@@ -29,9 +41,6 @@ chmod +x "$install_dir/screego"
 #=================================================
 ynh_script_progression "Adding $app's configuration files..."
 
-public_ip4="$(curl -s ip.yunohost.org)" || true
-key=$(ynh_string_random)
-
 ynh_config_add --template="screego.config" --destination="$install_dir/screego.config"
 
 #=================================================
@@ -50,8 +59,16 @@ yunohost service add "$app" --description="Screen sharing for developers" --log=
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-# Start a systemd service
 ynh_systemctl --service="$app" --action="start" --log_path="systemd"
+
+#=================================================
+# CREAT USER
+#=================================================
+ynh_script_progression "Creat admin user..."
+
+pushd $install_dir/
+	./screego hash --name "$admin" --pass "$password"
+popd
 
 #=================================================
 # END OF SCRIPT
