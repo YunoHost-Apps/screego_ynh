@@ -19,7 +19,8 @@ admindoc = "https://screego.net/#/"
 code = "https://github.com/screego/server"
 
 [integration]
-yunohost = ">= 11.2.29"
+yunohost = ">= 11.2.18"
+helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
 
@@ -44,6 +45,7 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
+    in_subdir = false
     amd64.url = "https://github.com/screego/server/releases/download/v1.10.5/screego_1.10.5_linux_amd64.tar.gz"
     amd64.sha256 = "86e57164dd94d9efb24a824957eb5aa627ccce4eeb744dc61462b8b33814a6df"
     arm64.url = "https://github.com/screego/server/releases/download/v1.10.5/screego_1.10.5_linux_arm64.tar.gz"
@@ -51,7 +53,7 @@ ram.runtime = "50M"
     armhf.url = "https://github.com/screego/server/releases/download/v1.10.5/screego_1.10.5_linux_armv7.tar.gz"
     armhf.sha256 = "bc87bf49aa14da94d4637e0fcdcb18e25badaf603911e1a515fd08192453351d"
 
-    # autoupdate.strategy = "latest_github_tag"
+    autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
 
@@ -61,3 +63,6 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.ports]
+    main.default = 5050
+    turn.default = 3478
+    turn.exposed = "Both"
