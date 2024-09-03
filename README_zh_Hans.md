@@ -31,7 +31,7 @@
 
 ## 截图
 
-![Screego 的截图](./doc/screenshots/example.jpg)
+![Screego 的截图](./doc/screenshots/screenshot.png)
 
 ## 文档与资源
 

@@ -31,7 +31,7 @@ EZ editatu eskuz.
 
 ## Pantaila-argazkiak
 
-![Screego(r)en pantaila-argazkia](./doc/screenshots/example.jpg)
+![Screego(r)en pantaila-argazkia](./doc/screenshots/screenshot.png)
 
 ## Dokumentazioa eta baliabideak
 

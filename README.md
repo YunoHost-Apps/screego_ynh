@@ -31,7 +31,7 @@ It shall NOT be edited by hand.
 
 ## Screenshots
 
-![Screenshot of Screego](./doc/screenshots/example.jpg)
+![Screenshot of Screego](./doc/screenshots/screenshot.png)
 
 ## Documentation and resources
 

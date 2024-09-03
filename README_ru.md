@@ -31,7 +31,7 @@
 
 ## Снимки экрана
 
-![Снимок экрана Screego](./doc/screenshots/example.jpg)
+![Снимок экрана Screego](./doc/screenshots/screenshot.png)
 
 ## Документация и ресурсы
 
