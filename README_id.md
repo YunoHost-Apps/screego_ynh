@@ -31,7 +31,7 @@ Ini TIDAK boleh diedit dengan tangan.
 
 ## Tangkapan Layar
 
-![Tangkapan Layar pada Screego](./doc/screenshots/example.jpg)
+![Tangkapan Layar pada Screego](./doc/screenshots/screenshot.png)
 
 ## Dokumentasi dan sumber daya
 
