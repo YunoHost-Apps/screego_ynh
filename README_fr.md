@@ -16,6 +16,8 @@ Il NE doit PAS être modifié à la main.
 
 ## Vue d’ensemble
 
+Partage d'écran pour les développeurs.
+
 ### Fonctionnalités
 
 - Partage d'écran multi-utilisateurs

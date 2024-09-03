@@ -16,6 +16,8 @@ EZ editatu eskuz.
 
 ## Aurreikuspena
 
+Screen sharing for developers.
+
 ### Features
 
 - Multi User Screenshare

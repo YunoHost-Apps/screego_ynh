@@ -16,6 +16,8 @@ No se debe editar a mano.
 
 ## Descripción general
 
+Screen sharing for developers.
+
 ### Features
 
 - Multi User Screenshare

@@ -16,6 +16,8 @@ It shall NOT be edited by hand.
 
 ## Overview
 
+Screen sharing for developers.
+
 ### Features
 
 - Multi User Screenshare
