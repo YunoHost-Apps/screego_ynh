@@ -31,7 +31,7 @@ No se debe editar a mano.
 
 ## Capturas
 
-![Captura de Screego](./doc/screenshots/example.jpg)
+![Captura de Screego](./doc/screenshots/screenshot.png)
 
 ## Documentaciones y recursos
 

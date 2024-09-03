@@ -30,7 +30,7 @@ Il NE doit PAS être modifié à la main.
 
 ## Captures d’écran
 
-![Capture d’écran de Screego](./doc/screenshots/example.jpg)
+![Capture d’écran de Screego](./doc/screenshots/screenshot.png)
 
 ## Documentations et ressources
 
