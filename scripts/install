@@ -33,7 +33,6 @@ ynh_hide_warnings yunohost firewall allow UDP -4 49152:65535
 ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
-touch $install_dir/users
 
 chmod +x "$install_dir/screego"
 
@@ -67,7 +66,12 @@ ynh_systemctl --service="$app" --action="start" --log_path="systemd"
 #=================================================
 ynh_script_progression "Creat admin user..."
 
-($install_dir/screego hash --name "$admin" --pass "$password") >> $install_dir/users
+touch $install_dir/users
+
+chmod 600 "$install_dir/users"
+chown $app:$app "$install_dir/users"
+
+($install_dir/screego hash --name "$admin" --pass "$password") >> "$install_dir/users"
 
 #=================================================
 # END OF SCRIPT
