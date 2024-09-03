@@ -1,3 +1,5 @@
+Partage d'écran pour les développeurs.
+
 ### Fonctionnalités
 
 - Partage d'écran multi-utilisateurs
