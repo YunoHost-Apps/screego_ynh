@@ -67,10 +67,6 @@ ynh_systemctl --service="$app" --action="start" --log_path="systemd"
 #=================================================
 ynh_script_progression "Creat admin user..."
 
-#pushd $install_dir/
-#	./screego hash --name "$admin" --pass "$password"
-#popd
-
 ($install_dir/screego hash --name "$admin" --pass "$password") >> $install_dir/users
 
 #=================================================
