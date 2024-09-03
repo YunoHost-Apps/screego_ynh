@@ -33,6 +33,7 @@ ynh_hide_warnings yunohost firewall allow UDP -4 49152:65535
 ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
+touch $install_dir/users
 
 chmod +x "$install_dir/screego"
 
