@@ -58,9 +58,9 @@ ram.runtime = "50M"
     arm64.sha256 = "1fc0c45f4b19fd89cbd579ea87fa40bc55e9cea21db0fdc20e6d19a16feaf9d3"
     armhf.url = "https://github.com/screego/server/releases/download/v1.11.0/screego_1.11.0_linux_armv7.tar.gz"
     armhf.sha256 = "40910096425a146e399befa917ea356b77f43e9a96bbd908168bcb8db7bfedf5"
-    autoupdate.asset.amd64 = "screego_\d+\.\d+\.\d+_linux_amd64\.tar\.gz"
-    autoupdate.asset.arm64 = "screego_\d+\.\d+\.\d+_linux_arm64\.tar\.gz"
-    autoupdate.asset.armhf = "screego_\d+\.\d+\.\d+_linux_armv7\.tar\.gz"
+    autoupdate.asset.amd64 = "screego_\\d+\\.\\d+\\.\\d+_linux_amd64\\.tar\\.gz"
+    autoupdate.asset.arm64 = "screego_\\d+\\.\\d+\\.\\d+_linux_arm64\\.tar\\.gz"
+    autoupdate.asset.armhf = "screego_\\d+\\.\d+\\.\\d+_linux_armv7\\.tar\\.gz"
     autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
