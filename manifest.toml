@@ -60,7 +60,7 @@ ram.runtime = "50M"
     armhf.sha256 = "40910096425a146e399befa917ea356b77f43e9a96bbd908168bcb8db7bfedf5"
     autoupdate.asset.amd64 = "screego_\\d+\\.\\d+\\.\\d+_linux_amd64\\.tar\\.gz"
     autoupdate.asset.arm64 = "screego_\\d+\\.\\d+\\.\\d+_linux_arm64\\.tar\\.gz"
-    autoupdate.asset.armhf = "screego_\\d+\\.\d+\\.\\d+_linux_armv7\\.tar\\.gz"
+    autoupdate.asset.armhf = "screego_\\d+\\.\\d+\\.\\d+_linux_armv7\\.tar\\.gz"
     autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
