@@ -27,7 +27,7 @@ Screen sharing for developers.
 - Integrated TURN Server see NAT Traversal
 
 
-**分发版本：** 1.10.5~ynh1
+**分发版本：** 1.11.1~ynh1
 
 **演示：** <https://app.screego.net/>
 
