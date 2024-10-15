@@ -26,7 +26,7 @@ Partage d'écran pour les développeurs.
 - Installation simple via Docker / binaire unique
 - Serveur TURN intégré voir Traversée NAT
 
-**Version incluse :** 1.10.5~ynh2
+**Version incluse :** 1.11.1~ynh1
 
 **Démo :** <https://app.screego.net/>
 
