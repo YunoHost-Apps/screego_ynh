@@ -7,7 +7,7 @@ name = "Screego"
 description.en = "Screen sharing for developers"
 description.fr = "Partage d'écran pour les développeurs"
 
-version = "1.10.5~ynh1"
+version = "1.11.1~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -19,9 +19,9 @@ admindoc = "https://screego.net/#/"
 code = "https://github.com/screego/server"
 
 [integration]
-yunohost = ">= 11.2.29"
+yunohost = ">= 11.2.30"
 helpers_version = "2.1"
-architectures = "all"
+architectures = ["amd64", "arm64", "armhf"]
 multi_instance = true
 
 ldap = false
@@ -52,14 +52,16 @@ ram.runtime = "50M"
 
     [resources.sources.main]
     in_subdir = false
-    amd64.url = "https://github.com/screego/server/releases/download/v1.10.5/screego_1.10.5_linux_amd64.tar.gz"
-    amd64.sha256 = "86e57164dd94d9efb24a824957eb5aa627ccce4eeb744dc61462b8b33814a6df"
-    arm64.url = "https://github.com/screego/server/releases/download/v1.10.5/screego_1.10.5_linux_arm64.tar.gz"
-    arm64.sha256 = "d78adf825486bfca4a6cd8208cbf140d889533ad7bf8e2f323b203dbac05bfc2"
-    armhf.url = "https://github.com/screego/server/releases/download/v1.10.5/screego_1.10.5_linux_armv7.tar.gz"
-    armhf.sha256 = "bc87bf49aa14da94d4637e0fcdcb18e25badaf603911e1a515fd08192453351d"
-
-    autoupdate.strategy = "latest_github_tag"
+    amd64.url = "https://github.com/screego/server/releases/download/v1.11.1/screego_1.11.1_linux_amd64.tar.gz"
+    amd64.sha256 = "0335c0d6701bf22436932e78aabc4aced2f6a1c3108030effdcce9cb76b844fa"
+    arm64.url = "https://github.com/screego/server/releases/download/v1.11.1/screego_1.11.1_linux_arm64.tar.gz"
+    arm64.sha256 = "cb07a37750866067d10f00f93fd0c4d354caa5fe73dd1ee9ba52ee30cb3892fa"
+    armhf.url = "https://github.com/screego/server/releases/download/v1.11.1/screego_1.11.1_linux_armv7.tar.gz"
+    armhf.sha256 = "df29fd1c00f928cafc69e4affc8762aa8183e220bd44d8df3e20bc148a65a4ba"
+    autoupdate.asset.amd64 = "screego_\\d+\\.\\d+\\.\\d+_linux_amd64\\.tar\\.gz"
+    autoupdate.asset.arm64 = "screego_\\d+\\.\\d+\\.\\d+_linux_arm64\\.tar\\.gz"
+    autoupdate.asset.armhf = "screego_\\d+\\.\\d+\\.\\d+_linux_armv7\\.tar\\.gz"
+    autoupdate.strategy = "latest_github_release"
 
     [resources.system_user]
 
