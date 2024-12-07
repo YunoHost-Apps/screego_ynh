@@ -5,7 +5,9 @@ EZ editatu eskuz.
 
 # Screego YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/screego.svg)](https://ci-apps.yunohost.org/ci/apps/screego/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/screego.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/screego.maintain.svg)
+[![Integrazio maila](https://apps.yunohost.org/badge/integration/screego)](https://ci-apps.yunohost.org/ci/apps/screego/)
+![Funtzionamendu egoera](https://apps.yunohost.org/badge/state/screego)
+![Mantentze egoera](https://apps.yunohost.org/badge/maintained/screego)
 
 [![Instalatu Screego YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=screego)
 
@@ -27,7 +29,7 @@ Screen sharing for developers.
 - Integrated TURN Server see NAT Traversal
 
 
-**Paketatutako bertsioa:** 1.11.1~ynh1
+**Paketatutako bertsioa:** 1.11.2~ynh1
 
 **Demoa:** <https://app.screego.net/>
 
