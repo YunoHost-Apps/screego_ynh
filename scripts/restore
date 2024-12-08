@@ -20,7 +20,7 @@ ynh_restore "/etc/nginx/conf.d/$domain.d/$app.conf"
 ynh_restore "/etc/systemd/system/$app.service"
 systemctl enable "$app.service" --quiet
 
-yunohost service add "$app" --description="Screen sharing for developers" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="Screen sharing for developers" --log="/var/log/$app/$app.log" --needs_exposed_ports=$port_turn
 
 #=================================================
 # RELOAD NGINX AND PHP-FPM OR THE APP SERVICE
