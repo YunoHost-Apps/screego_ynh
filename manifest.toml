@@ -7,7 +7,7 @@ name = "Screego"
 description.en = "Screen sharing for developers"
 description.fr = "Partage d'écran pour les développeurs"
 
-version = "1.11.1~ynh1"
+version = "1.11.2~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -52,12 +52,12 @@ ram.runtime = "50M"
 
     [resources.sources.main]
     in_subdir = false
-    amd64.url = "https://github.com/screego/server/releases/download/v1.11.1/screego_1.11.1_linux_amd64.tar.gz"
-    amd64.sha256 = "0335c0d6701bf22436932e78aabc4aced2f6a1c3108030effdcce9cb76b844fa"
-    arm64.url = "https://github.com/screego/server/releases/download/v1.11.1/screego_1.11.1_linux_arm64.tar.gz"
-    arm64.sha256 = "cb07a37750866067d10f00f93fd0c4d354caa5fe73dd1ee9ba52ee30cb3892fa"
-    armhf.url = "https://github.com/screego/server/releases/download/v1.11.1/screego_1.11.1_linux_armv7.tar.gz"
-    armhf.sha256 = "df29fd1c00f928cafc69e4affc8762aa8183e220bd44d8df3e20bc148a65a4ba"
+    amd64.url = "https://github.com/screego/server/releases/download/v1.11.2/screego_1.11.2_linux_amd64.tar.gz"
+    amd64.sha256 = "2733a1e59442f7aa272e0e55f4d2366a8e201d0af4021a9bd7e9f6176e4644b5"
+    arm64.url = "https://github.com/screego/server/releases/download/v1.11.2/screego_1.11.2_linux_arm64.tar.gz"
+    arm64.sha256 = "423099a3839284c66613f799ae5591823400bf44d9402a89d3267a7ebcc0d02e"
+    armhf.url = "https://github.com/screego/server/releases/download/v1.11.2/screego_1.11.2_linux_armv7.tar.gz"
+    armhf.sha256 = "d71ba0e4ca48f33dca568788a9e2c19e0316ca67d5511def5aee20b304939c4d"
     autoupdate.asset.amd64 = "screego_\\d+\\.\\d+\\.\\d+_linux_amd64\\.tar\\.gz"
     autoupdate.asset.arm64 = "screego_\\d+\\.\\d+\\.\\d+_linux_arm64\\.tar\\.gz"
     autoupdate.asset.armhf = "screego_\\d+\\.\\d+\\.\\d+_linux_armv7\\.tar\\.gz"
