@@ -5,7 +5,9 @@ Il NE doit PAS être modifié à la main.
 
 # Screego pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/screego.svg)](https://ci-apps.yunohost.org/ci/apps/screego/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/screego.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/screego.maintain.svg)
+[![Niveau d’intégration](https://apps.yunohost.org/badge/integration/screego)](https://ci-apps.yunohost.org/ci/apps/screego/)
+![Statut du fonctionnement](https://apps.yunohost.org/badge/state/screego)
+![Statut de maintenance](https://apps.yunohost.org/badge/maintained/screego)
 
 [![Installer Screego avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=screego)
 
@@ -26,7 +28,7 @@ Partage d'écran pour les développeurs.
 - Installation simple via Docker / binaire unique
 - Serveur TURN intégré voir Traversée NAT
 
-**Version incluse :** 1.11.1~ynh1
+**Version incluse :** 1.11.2~ynh1
 
 **Démo :** <https://app.screego.net/>
 
